@@ -1,1 +1,52 @@
 
+'''
+HEMOS CREADO DE FORMA GLOGAL TRES VARIABLES, LA variable resultado, a,b ,ESTAN CREADAS FUERA DEL BLOQUE DE CODIGO
+TAMBIEN PODEMOS PONER LAS VARIABLES DENTRO DEL BLOQUE TRY Y PEDIR AL USUARIO QUE DIGITE LOS VALORES
+LA VARIABLE RESULTADO QUEDA FUERA DEL BLOQUE PORQUE SI NO NO PODRIAMOS MOSTRAR EL RESULTADO ,NECESITAMOS QUE SEA UNA VARIABLE GLOBAL PARA PODER
+INCLUIRLA DENTRO DEL BLOQUE Y TAMBIEN INCLUIRLA FUERA DE EL Y NOS DE JUSTAMENTE UN RESULTADO
+'''
+'''
+SE PUEDEN CREAR CLASES DE EXCEPTION PERSONALIZADAS , VAMOS A VER COMO CREAR NUESTRAS PROPIAS EXCEPCIONES , NO SOLO TENEMOS LAS CLASES QUE YA ESTAN DEFINIDAS 
+QUE SON LAS QUE HEMOS ESTADO VIENDO EN EL DIAGRAMA ,ESAS CLASES YA ESTAN DEFINIDAS DE MANERA PERIODICA EN PYTHON, SIN EMBARGO NOSOTROS TAMBIEN PODEMOS DEFINIR NUESTRAS 
+PROPIAS EXCEPCIONES 
+'''
+
+from NumerosIgualesException import NumerosIgualesException
+resultado = None
+
+
+
+try:
+    a = int(input('DIGITE EL PRIMER NUMERO: '))  # dependiendo de lo que coloquemos aqui es el tipo de error que nos dara, si es un entero o un string(cadena)y si colocamos valores correcto el programa funciona bien
+    b = int(input('DIGITE EL SEGUNDO NUMERO: '))
+    if a == b:
+        raise NumerosIgualesException('Son numeros Iguales')
+    resultado = a/b # Modificamos
+    #Aqui viendo todo esto vemos la jerarquia
+except TypeError as e:
+    print(f'TypeError - OCURRIO UN ERROR: {type(e)}')
+
+
+except ZeroDivisionError as e:  # utilizamos como ej la variable e, pero podemos usar cualquier variable
+    print(f'ZeroDivisionError - OCURRIO UN ERROR: {type(e)}')
+
+
+except Exception as e:
+    print(f'Exception - OCURRIO UN ERROR: {type(e)}')
+else:
+    print('NO SE ARROJO NINGUNA EXCEPCION')
+finally:  # el bloque de codigo de finally SIEMPRE SE EJECUTARA,GENERALMENTE ESTE BLOQUE DE CODIGO LO PODEMOS UTILIZAR PARA LIBERAR ALGUN RECURSO PARA AVISAR AL USUARIO
+ # COMO TERMONO NUESTRO MANEJO DE EXCEPTIONES ETC YA QUE ESTE BLOQUE SIEMPRE SE VA A EJECUTAR
+    print('EJECUCION DE ESTE BLOQUE FINALLY')
+print(f'resultado es: {resultado}')
+print('seguimos...')
+# comenterio de la selda 2 a la 11
+'''
+Que pasa si cambiamos el tipo de excepcion por una excepcion de menor gerarquia, que pasa si a la  variable a le asignamos una cadena,en lugar de un valor numerico,
+Excepcion lo cambiamos por ZeroDivisionError,al ejecutar nos da error, si quitamos esta clase hija y volvemos a Excepcion y  volvemos a ejecutar da error, pero sigue con el proceso 
+de ejecucion no se ha detenido abruptamente el programa al usar el ZeroD...el tipo de error que nos da es de tipo type o es cadena, oes numerico, estamos mezclando, solamente 
+las clases padres pueden pocesar excepciones incluyendo las hijas , en este caso una clase excepcion puede procesar ZeroD... y aunque aqui no tenemos en esta figura el error de type Error
+este error de type error no tiene relacion directa con la clase ZeroD...Por lo tanto esta clase de ZeroD...no puede procesar excepciones de tipo type Error ,porque es otro tipo de Error
+unicamente Excepciones de mayor GERARQUIA pueden procesar tanto Excepciones de tipo typeDivisionError o de tipo typeError
+'''
+# VAMOS A VER LO QUE ES PROCESAR CLASES DE EXCEPCIONES MAS ESPECIFICAS,agregamos al codigo la ZeroDivisionError
