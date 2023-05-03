@@ -2,18 +2,35 @@ Grupo OMEGA
 
 INTEGRANTES
 
--GASTON RIVEROS
+-Gaston Riveros
 
--BELEN RABEL
+-Belen Rabel
 
--NICOLAS ABETE
+-Nicolas Abete
 
--LEONEL REAL
+-Leonel Real
 
--GUSTAVO D'ELLAC
+-Gustavo D'ellac
 
--DARIO TAMINI
+-Dario Tamini
 
--JULIETA GUTIERREZ
+-Julieta Gutierrez
+
+
+## "ORGANIZACION SEMANAL"
+
+│  WEEK          │  Scrum Master  │
+
+│-------------   │----------------│
+
+│:PENCIL: WEEK 1 │                  │
+
+│:PENCIL: WEEK 2 │                  │
+
+│:PENCIL: WEEK 3 │                  │
+
+│:PENCIL: WEEK 4 │                  │
+
+│:PENCIL:WEEK  5 │                  │
 
 
