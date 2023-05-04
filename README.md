@@ -23,9 +23,9 @@ INTEGRANTES
 
 │-------------   │----------------│
 
-│:PENCIL: WEEK 1 │                  │
+│:PENCIL: WEEK 1 │  Julieta Gutierrez │
 
-│:PENCIL: WEEK 2 │                  │
+│:PENCIL: WEEK 2 │  Dario Tamini   │
 
 │:PENCIL: WEEK 3 │                  │
 
