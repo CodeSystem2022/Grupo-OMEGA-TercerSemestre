@@ -1,5 +1,18 @@
 Grupo OMEGA
 
+
+[![binary-2904980-1280.jpg](https://i.postimg.cc/yxqkQCXM/binary-2904980-1280.jpg)](https://postimg.cc/ZBcbngQH)
+
+
+
+
+
+
+
+
+
+
+
 INTEGRANTES
 
 -Gaston Riveros
