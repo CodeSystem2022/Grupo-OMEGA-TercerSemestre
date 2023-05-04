@@ -38,12 +38,15 @@ INTEGRANTES
 
 │:PENCIL: WEEK 1 │  Julieta Gutierrez │
 
-│:PENCIL: WEEK 2 │  Dario Tamini   │
+│:PENCIL: WEEK 2 │  Dario Tamini      │
 
-│:PENCIL: WEEK 3 │                  │
+│:PENCIL: WEEK 3 │  Leonel Real       │
 
-│:PENCIL: WEEK 4 │                  │
+│:PENCIL: WEEK 4 │  Belen Rabel       │
 
-│:PENCIL:WEEK  5 │                  │
+│:PENCIL:WEEK  5 │  Nicolas Abete     │
+
+│:PENCIL:WEEK  6 │ Gaston Riveros     │
+
 
 
