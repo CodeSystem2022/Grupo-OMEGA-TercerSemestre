@@ -1,0 +1,10 @@
+#Nicolas Abete
+#Etiquetas Labels
+inicio:
+for(let contando = 0; contando<= 10; contando++){
+    if(contando % 2 !== 0)}
+    break inicio; / //lo que premite break es terminar con el proceso for
+    }
+    console.log(contando);
+}
+console.log("termina el ciclo");
