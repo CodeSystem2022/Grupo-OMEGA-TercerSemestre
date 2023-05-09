@@ -1,1 +1,28 @@
+**1.4 Preguntar si es un Array**
 
+//MODIFICAMOS LOS ELEMENTOS DEL ARREGLO
+
+autos[1] = 'Volvo';
+console.log(autos[1]);
+
+//AGREGAMOS NUEVOS VALORES AL ARREGLO
+
+autos.push('Audi');//AGREGAMOS EL ELEMENTO AL FINAL DEL ARREGLO
+console.log(autos);
+//OTRAS FORMAS DE AGREGAR ELEMENTOS EL ARREGLO
+autos[autos.length] = 'Porche';
+console.log(autos);
+
+//TERCERA FORMA DE AGREGAR ELEMENTOS TENER "CUIDADO"
+autos[6] = 'Renault';//aqui ocupamos un espacio de memoria de mas,queda un espacio vacio
+console.log(autos);
+
+//COMO PREGUNTAR SI ES UN ARRAY O ARREGLO 
+//Si usaramos el typeoff nos diria que es un tipo object en ocaciones es importante desifrar
+//un arreglo debemos saber como preguntar en JS si estamos trabajando con un arreglo si usamos 
+//typeoff para nuestro arreglo autos nos muestra que es de tipo object,por eso ahora no nos
+//sirve,despues de la actualizacion podemos usar la clase Array
+
+console.log(Array.isArray(autos));//DEVUELVE UN BOOLEAN
+//SEGUNDA FORMA DE COMPROBAR
+console.log(autos instanceof Array);//Preguntamos si la variable es una instancia de la clase Array
