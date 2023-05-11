@@ -43,6 +43,12 @@ Grupo OMEGA!
 -Dario Tamini
 
 -Julieta Gutierrez (www.linkedin.com/in/mjulietagutierrez)
+
+# "MARCO SCRUM"
+### Scrum es un marco de trabajo ágil centrado en la entrega interactiva e incremental
+### de productos de alta calidad a travéz de la colaboracion, la comunicacion y la retroalimentacion
+### continua entre los miembros del equipo,con roles y responsabilidades claras y un enfoque en la 
+### mejora continua del proceso
  
 
 
