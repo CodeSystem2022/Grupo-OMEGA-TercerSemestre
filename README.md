@@ -42,7 +42,8 @@ Grupo OMEGA!
 
 -Dario Tamini
 
--Julieta Gutierrez
+-Julieta Gutierrez (www.linkedin.com/in/mjulietagutierrez)
+ 
 
 
 ## "ORGANIZACION SEMANAL"
