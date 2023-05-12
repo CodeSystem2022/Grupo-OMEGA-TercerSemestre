@@ -1,0 +1,87 @@
+//#TestEnumeraciones
+ 
+package test;
+
+import enumeraciones.Continentes;
+import enumeraciones.Dias;
+
+
+public class TestEnumeraciones {
+    public static void main(String[] args) {
+        //System.out.println("Dia 1: "+Dias.LUNES);
+        //indicarDiaSemana(Dias.LUNES);
+        //System.out.println("Dia 2: "+Dias.MARTES);
+        //indicarDiaSemana(Dias.MARTES);
+        //System.out.println("Dia 3: "+Dias.MIERCOLES);
+        //indicarDiaSemana(Dias.MIERCOLES);
+        //System.out.println("Dia 4: "+Dias.JUEVES);
+        //indicarDiaSemana(Dias.JUEVES);
+        //System.out.println("Dia 5: "+Dias.VIERNES);
+        //indicarDiaSemana(Dias.VIERNES);
+        //System.out.println("Dia 6: "+Dias.SABADO);
+        //indicarDiaSemana(Dias.SABADO);
+        //System.out.println("Dia 7: "+Dias.DOMINGO);
+        //indicarDiaSemana(Dias.DOMINGO);
+        
+        System.out.println("Continente Nro. 4: "+Continentes.AMERICA);
+        System.out.println("Nro. de paises en el 4to continente: "
+                +Continentes.AMERICA.getPaises());
+        System.out.println("Nro. de habitantes en el 4to continente: "
+                +Continentes.AMERICA.getHabitantes());
+    }
+    
+    private static void indicarDiaSemana(Dias dias){
+        switch(dias){
+            case LUNES:
+                System.out.println("Primer dia de la semana");
+                break;
+            case MARTES:
+                System.out.println("Segundo dia de la semana");
+                break;
+            case MIERCOLES:
+                System.out.println("Tercer dia de la semana");
+                break;
+            case JUEVES:
+                System.out.println("Cuarto dia de la semana");
+                break;
+            case VIERNES:
+                System.out.println("Quinto dia de la semana");
+                break;
+            case SABADO:
+                System.out.println("Sexto dia de la semana");
+                break;
+            case DOMINGO:
+                System.out.println("Septimo dia de la semana");
+                break;
+        }
+    }
+}
+//#Enum Continentes
+
+
+package enumeraciones;
+
+
+public enum Continentes {
+    AFRICA(54, "1.4 billones"),
+    EUROPA(46, "447.7 millones"),
+    ASIA(51, "4.5 billones"),
+    AMERICA(35, "1.1 billones"),
+    OCEANIA(14, "43 millones");
+    
+    private final int paises;
+    private String habitantes;
+    
+    Continentes(int paises, String habitantes){
+        this.paises = paises;
+        this.habitantes = habitantes;
+    }
+    
+    public int getPaises(){
+        return this.paises;
+    }
+    
+    public String getHabitantes(){
+        return this.habitantes;
+    }
+}
