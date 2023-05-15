@@ -1,0 +1,27 @@
+
+package Enumeraciones;
+
+
+public enum Dias {
+    LUNES,
+    MARTES,
+    MIERCOLES,
+    JUEVES,
+    VIERNES,
+    SABADO,
+    DOMINGO
+    
+    
+    
+}
+
+package test;
+
+import Enumeraciones.Dias;
+
+
+public class TestEnumeraciones {
+    public static void main(String[] args) {
+        System.out.println("Dia 1:"+Dias.LUNES);
+    }
+}
