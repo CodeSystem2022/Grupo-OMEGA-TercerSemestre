@@ -1,1 +1,20 @@
+Nicolas Abete 
+Let K = 10;
+function cambiarValor(a){ //paso por valor
+    a=20;
+}
 
+cambiarValor(k);
+
+//Paso por referencia
+const persona = {
+    nombre: Juan',
+    apellido: Lepez'
+}
+console.log(persona); { nombre: 'Juan', apellido: 'Lopez' }
+function cambiarValorObjeto(p1){
+     pl.nombre = 'Ignacio';
+     pl.apellido = 'Perez';
+}
+cambiarValorObjeto(persona);
+console.log(persona); { nombre: 'Ignacio', apellido: 'Perez' }
