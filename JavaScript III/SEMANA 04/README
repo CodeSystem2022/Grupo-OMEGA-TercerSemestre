@@ -1,1 +1,49 @@
 
+let persona ={
+    nombre:'Carlos',
+    apellido:'Gil',
+    email:'cgil@gmail.com',
+    edad:28,
+    idioma:'es',  //una buena practica es poner los idiomas en mayusculas,pero con el touppercase
+
+    get lang(){
+        return this.idioma.toUpperCase();//convierte las minusculas en mayusculas
+    },
+    set lang(lang){
+        this.idioma = lang.toUpperCase();
+    },
+    nombreCompleto: function(){ //aqui tenemos un metodo o funcion
+        return this.nombre+' '+this.apellido;
+    },
+    get nombreEdad(){  //Este es el metodo get
+        return 'El nombre es: '+this.nombre+',Edad: '+this.edad;
+
+    }
+   
+}
+console.log(persona.nombre);
+console.log(persona.apellido);
+console.log(persona.email);
+console.log(persona.edad);
+console.log(persona);
+console.log(persona.nombreCompleto());
+console.log('Ejecutando con un objeto');
+
+
+//2da forma de crear un objeto
+let persona2 = new Object();
+persona2.nombre = 'Juan';
+persona2.direccion = 'Salada 14';
+persona2.telefono = '535655555';
+console.log(persona2.telefono);
+console.log('CREAMOS UN NUEVO OBJETO');
+//Aqui vamos a ver como acceder a la propiedades de los objetos
+console.log(persona['apellido']);//Accedemos como si fuera un arreglo
+
+console.log('USAMOS EL CICLO FOR IN');
+//for in y accedemos al objeto como si fuera un arreglo
+for(propiedad in persona){
+    console.log(propiedad);
+    console.log(persona[propiedad]);
+
+}
