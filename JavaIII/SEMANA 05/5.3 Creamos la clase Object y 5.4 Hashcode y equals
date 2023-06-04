@@ -1,0 +1,170 @@
+
+package Domain;
+
+
+public class Empleado {
+    protected String nombre;
+    protected double sueldo;
+    
+    public Empleado (String nombre, double sueldo){
+        this.nombre = nombre;
+        this.sueldo = sueldo;
+    }
+    
+    
+    // Metododo para la sobrescritura
+    public String obtenerDetalles(){
+        return "Nombre: "+this.nombre+" , Sueldo:  "+this.sueldo;
+        
+    }
+}
+
+package Domain;
+
+public class Escritor extends Empleado{
+    final TipoEscritura tipoEscritura;
+    
+    public Escritor(String nombre double Sueldo, TipoEscritura tipoEscritura){
+    super(nombre, sueldo);
+    this.tipoEscritura = tipoEscritura;
+}
+    
+    //Metodo para sobreescribir
+    @Override
+    public String obtenerDetalles(){
+        return super.obtenerDetalles()+", Tipo Escritura: "+tipoEscritura.getDescription();
+    }
+    
+    @Override
+    public String toString() {
+        return "Escritor{" +"tipoEscritura=" tipoEscritura +'}'+" "+super.toString();
+    }
+    
+    public TipoEscritura get.Escritor(){
+        return this.tipoEscritura
+    }
+    
+}
+
+package Domain;
+
+public enum TipoEscritura {
+    CLASICO ("Escritura a mano"),
+    MODERNO ("Escritura digital");
+    
+    private final String descripcion;
+    
+    private TipoEscritura(String descripcion){
+        this.descripcion = descripcion;
+        
+    }
+    // Metodo get
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+}
+package test;
+
+import domain.*;
+
+public class TestClaseObjects {
+
+    public static void main(String[] args) {
+        Empleado1 empleado1 = new Empleado("juan", 5000);
+        Empleado2 empleado2 = new Empleado("Juan", 5000);
+
+        if (empleado1 == empleado2){
+            System.out.println("Tienen la misma referencia en memoria ");
+        }
+        else{
+            System.out.println("Tienen disntinta referencia en memoria");
+        }
+        if (empleado1.equals(empleado2)) {
+            System.out.println("Los objetos son iguales en contenido");
+        } else {
+            System.out.println("Los objetos son distintos en contenido");
+        }
+        if (empleado1.hascode() == empleado2.hascode()) {
+            System.out.println("El valor hashcode es igual");
+        } else {
+            System.out.println("El valor hashcode es diferente");
+        }
+
+    }
+}
+
+package Domain;
+
+
+public class Empleado {
+    protected String nombre;
+    protected double sueldo;
+    
+    public Empleado (String nombre, double sueldo){
+        this.nombre = nombre;
+        this.sueldo = sueldo;
+    }
+    
+    
+    // Metododo para la sobrescritura
+    public String obtenerDetalles(){
+        return "Nombre: "+this.nombre+" , Sueldo:  "+this.sueldo;
+        
+    }
+
+    @Override
+    public String toString() {
+        return "Empleado{" + "nombre=" + nombre + ", sueldo=" + sueldo + '}';
+    }
+    
+}
+
+package Domain;
+
+public class Escritor extends Empleado{
+    final TipoEscritura tipoEscritura;
+    
+    public Escritor(String nombre double Sueldo, TipoEscritura tipoEscritura){
+    super(nombre, sueldo);
+    this.tipoEscritura = tipoEscritura;
+}
+    
+    //Metodo para sobreescribir
+    @Override
+    public String obtenerDetalles(){
+        return super.obtenerDetalles()+", Tipo Escritura: "+tipoEscritura.getDescription();
+    }
+
+    @Override
+    public String toString() {
+        return "Escritor{" + "tipoEscritura=" + tipoEscritura + '}'+" "+super.ToString();
+    
+
+    public TipoEscritura get.Escritor(){
+        return this.tipoEscritura
+    }
+    
+}
+
+package Domain;
+
+public enum TipoEscritura {
+    CLASICO ("Escritura a mano"),
+    MODERNO ("Escritura digital");
+    
+    private final String descripcion;
+    
+    private TipoEscritura(String descripcion){
+        this.descripcion = descripcion;
+        
+    }
+    // Metodo get
+    public String getDescripcion(){
+        return this.descripcion;
+    }
+}
+
+
+
+
+
