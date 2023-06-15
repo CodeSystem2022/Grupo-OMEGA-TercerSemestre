@@ -68,7 +68,7 @@ Grupo OMEGA!
 
 │:PENCIL:WEEK  6 │ Gaston Riveros     │
 
-│:PENCIL:WEEK 7  │ Julieta Gutierrez  │ 
+│:PENCIL:WEEK 7  │ Gustavo De Llac  │ 
 
 
 
