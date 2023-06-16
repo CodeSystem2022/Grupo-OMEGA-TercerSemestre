@@ -68,7 +68,13 @@ Grupo OMEGA!
 
 │:PENCIL:WEEK  6 │ Gaston Riveros     │
 
-│:PENCIL:WEEK 7  │ Gustavo De Llac  │ 
+│:PENCIL:WEEK 7  │ Gustavo De Llac    │ 
+
+|:PENCIL:WEEK 8 | Julieta Gutierrez   |
+
+|:PENCIL:WEEK   | Dario Tamini        |
+
+|:PENCIL:WEEK  | Leonel Real          |
 
 
 
