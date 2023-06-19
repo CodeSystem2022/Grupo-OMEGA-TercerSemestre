@@ -1,0 +1,50 @@
+// HEREDAR METODOS
+
+class Persona{ //Clase padre
+
+    static contadorPersonas = 0;  //Atributo estático
+    //email = 'Valor default email';  //Atributo no estático
+
+    static get MAX_OBJ(){  //Este método simula una constante
+        return 5;
+    }
+
+    constructor(nombre, apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersonas;
+        }
+        else{
+            console.log('Se ha superaod el máximo de objtetos permitidos');
+        }
+        
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+
+    get apellido(){
+        return this._apellido;
+    }
+
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
+    
+    // Definimos un método en la clase Padre para luego
+    //heredarlo en la clase hija
+    
+    nombreCompleto(){   //Metodo definido en la clase padre
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
+        
+    // Heredamos a la clase hija el método de la clase Padre
+    let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
+    console.log(empleado1);
+    console.log(empleado1.nombreCompleto());  //Método heredado desde clase padre
