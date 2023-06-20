@@ -57,8 +57,6 @@ let persona2 = new Persona('Carlos', 'Lara');
 console.log(persona2.nombre);
 persona2.nombre = 'María Laura';
 console.log(persona2.nombre);
-let persona2 = new Persona('Rodriguez', 'Sanchez');
-console.log(persona2.apellido);
 persona2.apellido = 'Roco';
 console.log(persona2.apellido);
 //console.log(persona2);
