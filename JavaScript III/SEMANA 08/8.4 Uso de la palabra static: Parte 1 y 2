@@ -1,0 +1,58 @@
+// 8.4 Uso de la palabra static. Parte 1 y 2
+
+class Persona{ //Clase padre
+
+    static contadorPersonas = 0;  //Atributo estático
+    //email = 'Valor default email';  //Atributo no estático
+
+    static get MAX_OBJ(){  //Este método simula una constante
+        return 5;
+    }
+
+    constructor(nombre, apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+        if(Persona.contadorPersonas < Persona.MAX_OBJ){
+            this.idPersona = ++Persona.contadorPersonas;
+        }
+        else{
+            console.log('Se ha superaod el máximo de objtetos permitidos');
+        }
+        
+        //console.log('Se incrementa el contador: '+Persona.contadorObjetosPersona);
+    }
+
+    get nombre(){
+        return this._nombre;
+    }
+
+    set nombre(nombre){
+        this._nombre = nombre;
+    }
+
+    get apellido(){
+        return this._apellido;
+    }
+
+    set apellido(apellido){
+        this._apellido = apellido;
+    }
+
+    nombreCompleto(){
+        return this.idPersona+' '+this._nombre+' '+this._apellido;
+
+
+let persona1 = new Persona('Martin', 'Perez');
+let persona2 = new Persona('Carlos', 'Lara');
+let empleado1 = new Empleado('Maria', 'Gimenez', 'Sistemas');
+
+// tiene un identificador unico c/u. suma todas las instancias indistintamente de la clases
+console.log(persona1.toString()); // mostramos la primer instancia hecha de la clase padre
+console.log(persona2.toString());
+console.log(empleado1.toString()); // 
+console.log(Persona.contadorPersonas);  //atributo estatico sobre la instancia
+
+//agregamos otro ejemplo, una cuarta instancia
+let persona3 = new Persona('Carla', 'Pertosi');
+console.log(persona3.toString());
+console.log(Persona.contadorPersonas);  //atributo estatico sobre la instancia
