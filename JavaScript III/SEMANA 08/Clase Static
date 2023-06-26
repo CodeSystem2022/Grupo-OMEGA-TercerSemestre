@@ -1,0 +1,28 @@
+8.5 Creacion de Constantes Estaticas
+
+class Persona{
+    static contadorPersona = 0;
+
+    static get MAX_OBJ(){ // este metodo simula una constante
+        return 5;
+    }
+    constructor(nombre,apellido){
+        this._nombre = nombre;
+        this._apellido = apellido;
+        if(Persona.contadorPersona < Persona.MAX_OBJ){
+            this._idPersona = ++Persona.contadorPersona;
+
+        }
+        else{
+            console.log('Se ha superado el maximo de objetos permitidos');
+        }
+        //consolee.log('Se incrementa el contador: '+Persona.contadorObjetoPersona);
+
+    }
+  console.log(Persona.MAX_OBJ);
+//Persona.MAX_OBJ = 10; NO SE PUEDEN MODIFICAR,NI ALTERAR 
+console.log(Persona.MAX_OBJ);
+let persona4 = new Persona('Franco','Diaz');
+console.log(persona4.toString());
+let persona5 = new Persona('Liliana','Paz');
+console.log(persona5.toString());
