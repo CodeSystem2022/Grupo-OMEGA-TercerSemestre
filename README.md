@@ -25,7 +25,7 @@ Grupo OMEGA!
 
 "INTEGRANTES"
 
--
+-Gaston Riveros
 
 -Belen Rabel
 
