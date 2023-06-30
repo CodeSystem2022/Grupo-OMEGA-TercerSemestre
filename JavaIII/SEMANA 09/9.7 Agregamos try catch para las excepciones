@@ -1,0 +1,19 @@
+Ejercicio 9.7 Agregamos el método try catch para las excepciones
+a nuestro proyecto calculadora
+
+try {
+                var operacion = Integer.parseInt(entrada.nextLine());
+                if (operacion >= 1 && operacion <= 4) {
+                    ejecutarOperacion(operacion, entrada);
+                } //Fin del if
+                else if (operacion == 5) {
+                    System.out.println("Hasta pronto...");
+                    break; //Rompe el ciclo y sale
+                } else {
+                    System.out.println("Opción erronea: " + operacion);
+                }
+                //Imprimimos un salto de linea antes de repetir el menú
+                System.out.println();
+            } catch (Exception e){ //Fin del Try, comienzo del catch
+                System.out.println("Ocurrió un error: "+e.getMessage());
+                System.out.println();
