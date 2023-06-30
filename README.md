@@ -72,9 +72,11 @@ Grupo OMEGA!
 
 |:PENCIL:WEEK 8 | Julieta Gutierrez   |
 
-|:PENCIL:WEEK   | Dario Tamini        |
+|:PENCIL:WEEK 9  | Dario Tamini       |
 
-|:PENCIL:WEEK  | Leonel Real          |
+|:PENCIL:WEEK 10 | Leonel Real        |
 
+|:PENCIL:WEEK 11 | Belen Rabel        |
 
+|:PENCIL:WEEK 12 | Nicolas Abete      |
 
