@@ -17,3 +17,13 @@ public class ListadoPersonasApp {
         }//Fin del ciclo while
 
     }//Fin metodo main
+
+ private static void mostrarMenu(){
+        //Mostramos  las opciones
+        System.out.print("""
+                **+***Listado de Persona*******
+                1.  Agregar
+                2. Listar
+                3. Salir
+                """);
+        System.out.print( "Digite una de las opciones: ");
