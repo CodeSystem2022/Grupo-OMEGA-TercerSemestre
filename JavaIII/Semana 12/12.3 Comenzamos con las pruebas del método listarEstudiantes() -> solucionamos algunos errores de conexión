@@ -1,0 +1,9 @@
+public static void main(String[] args) {
+        var estudianteDAO = new EstudianteDAO();
+        
+        // listar estudiantes
+        System.out.println("Listado de estudiantes: ");
+        List<Estudiante> estudiantes = estudianteDAO.listarEstudiantes();
+        estudiantes.forEach(System.out::println);// funcion lamda para imprimir
+
+}
